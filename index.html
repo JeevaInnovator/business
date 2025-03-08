@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jeeva - Business Website">
+    <title>Jeeva's Business Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Jeeva's Business</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Welcome to Jeeva's Business</h1>
+            <p>Your trusted partner for all your tech solutions.</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+        <div class="hero-image">
+            <img src="./imges/43190.jpg" alt="Jeeva's Photo">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Jeeva, a 2nd-year BSc Computer Technology student at Sri Ramakrishna College of Arts and Science. I specialize in web development and digital solutions. I'm passionate about technology and how it can help businesses grow.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>Web Development</h3>
+                <p>Building responsive and dynamic websites tailored to your needs.</p>
+            </div>
+            <div class="service-item">
+                <h3>Consultation</h3>
+                <p>Providing expert consultation for businesses looking to optimize their technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Jeeva. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

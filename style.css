@@ -1,0 +1,380 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+header {
+    background-color: #333;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.navbar .nav-links {
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar .nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-links a:hover {
+    color: #f45b69;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(70, 130, 180, 0.8), rgba(255, 105, 180, 0.8)), url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+    padding: 50px 20px;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #f45b69;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero .btn:hover {
+    background-color: #ff61a6;
+}
+
+.hero-image img {
+    width: 270px; /* Set a fixed width */
+    height: 320px; /* Set the height equal to the width */
+    border-radius: 50%; /* This will make the image round */
+    object-fit: cover; /* This ensures the image fills the circle without distortion */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    animation: zoomIn 2s ease-in-out;
+}
+
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f0f4f8;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h3 {
+    font-size: 28px;
+    color: #f45b69;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    display: block;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.contact button {
+    background-color: #f45b69;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact button:hover {
+    background-color: #ff61a6;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+        padding: 50px 10px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .hero-image img {
+        width: 250px;
+    }
+
+    .service-list {
+        flex-direction: column;
+    }
+
+    .service-item {
+        margin-bottom: 20px;
+    }
+
+    .contact h2, .about h2, .services h2 {
+        font-size: 30px;
+    }
+
+    .contact input,
+    .contact textarea {
+        font-size: 14px;
+    }
+
+    .contact button {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .navbar .nav-links {
+        display: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .navbar .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .navbar .logo a {
+        font-size: 24px;
+        padding-left: 10px;
+    }
+
+    .hero {
+        padding: 40px 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-image img {
+        width: 200px;
+    }
+
+    .service-item {
+        padding: 20px;
+    }
+
+    .contact form {
+        padding: 0 15px;
+    }
+
+    .contact input,
+    .contact textarea {
+        font-size: 14px;
+    }
+
+    .contact button {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    /* Show Navbar links when menu icon is clicked */
+    .navbar .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar .menu-toggle:checked + .nav-links {
+        display: block;
+    }
+}
+
+/* Toggle Button for Mobile Navbar */
+.navbar .menu-toggle {
+    display: none;
+}
+
+.navbar .menu-toggle:checked + .nav-links {
+    display: block;
+}
